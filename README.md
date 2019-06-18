@@ -169,11 +169,10 @@ However if applications want to add interactivity to the thread, such as allowin
 #### Interacting with a Thread
 
 ##### 1. Joining a thread
-To post in a thread, a user must first join the thread.
+To post in a thread, a user must first join the thread. This will implicitly use the moderation options where the current user is the `firstModerator` and `members` is false.
 ```js
 const thread = await space.joinThread('myThread')
 ```
-
 A thread can also be given the moderation options when joining. You can pass `firstModerator`, a 3ID of the first moderator, and a `members` boolean which indicates if it is a members thread or not. Moderators can add other moderators, add members, and delete any posts in the thread. Members can post in member only threads.
 
 ```js
