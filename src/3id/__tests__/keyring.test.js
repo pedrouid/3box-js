@@ -1,5 +1,5 @@
 const Keyring = require('../keyring')
-const { HDNode } = require('ethers').utils
+const { HDNode } = require('@ethersproject/hdnode')
 const nacl = require('tweetnacl')
 nacl.util = require('tweetnacl-util')
 

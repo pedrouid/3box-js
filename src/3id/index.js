@@ -1,4 +1,4 @@
-const { HDNode } = require('ethers').utils
+const { HDNode } = require('@ethersproject/hdnode')
 const didJWT = require('did-jwt')
 const DidDocument = require('ipfs-did-document')
 const IpfsMini = require('ipfs-mini')
